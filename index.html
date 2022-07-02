@@ -4,11 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <title>Pokemon</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Pokemons</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Rokedex</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Busca un pokemon" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div id="sliderPanaderia" class="carousel slide w-100" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#sliderPanaderia" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#sliderPanaderia" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#sliderPanaderia" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Img/pexels.jpg" class="d-block w-100  img-banner-responsive" alt="pexels">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/picachu.jpg" class="d-block w-100  img-banner-responsive" alt="picachu">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/pokemongrande.jpg" class="d-block w-100  img-banner-responsive" alt="pokemongrande">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sliderPanaderia" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sliderPanaderia" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+         </section>
+         <section class="row">
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/002.jpg" class="card-img-top" alt="img2">
+                <div class="card-body">
+                  <h5 class="card-title">Bulbausaur</h5>
+                  <span class="badge rounded-pill text-bg-warning"></span>
+                  <span class="badge rounded-pill text-bg-success">Poison</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalMedialuna">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/003.png" class="card-img-top" alt="img3">
+                <div class="card-body">
+                  <h5 class="card-title">Ivysaur</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                  <a href="detalleProducto.html" class="btn btn-primary">Ver detalle</a>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/004.png" class="card-img-top" alt="img4">
+                <div class="card-body">
+                  <h5 class="card-title">Venesaur</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button" disabled>Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/005.jpg" class="card-img-top" alt="img5">
+                <div class="card-body">
+                  <h5 class="card-title">Charmander</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/006.png" class="card-img-top" alt="img6">
+                <div class="card-body">
+                  <h5 class="card-title">Squirtel</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/007.png" class="card-img-top" alt="img7">
+                <div class="card-body">
+                  <h5 class="card-title">Charmeleon</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/009.png" class="card-img-top" alt="img9">
+                <div class="card-body">
+                  <h5 class="card-title">Charizard</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-3 my-2">
+              <div class="card">
+                <img src="Img/012.png" class="card-img-top" alt="img12">
+                <div class="card-body">
+                  <h5 class="card-title">Butterfree</h5>
+                  <span class="badge rounded-pill text-bg-warning">Planta</span>
+                  <span class="badge rounded-pill text-bg-success">Veneno</span>
+                  <br>
+                  <br>
+                 <button class="btn btn-primary" type="button">Ver detalle</button>
+                </div>
+              </div>
+            </aside>
+          </section>
+    </main>
+    <footer></footer>
+    <script src="JS/bootstrap.min.js"></script>
 </body>
 </html>
